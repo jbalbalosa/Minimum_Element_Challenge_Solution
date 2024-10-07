@@ -25,13 +25,18 @@ public class Main {
         return values;
     }
 
-    private static int findMin(int[] array){
+        private static int findMin(int[] array){
 
-        int min = Integer.MAX_VALUE; // MAX VALUE THAT THE INTEGER CAN HOLD
-        for(int el: array){
-            if(el < min){
-                min = el;            }
-        }
+//        int min = Integer.MAX_VALUE; // MAX VALUE THAT THE INTEGER CAN HOLD
+//        for(int el: array){
+//            if(el < min){
+//                min = el;            }
+//        }
+//        return min;
+        //Other ways to solve is to sort the Array first then get the first value
+
+        Arrays.sort(array);
+        int min = array[0];
         return min;
     }
 }
